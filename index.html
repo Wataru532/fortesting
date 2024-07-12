@@ -44,15 +44,15 @@
       
       function month_Now(){
             if(date < 10 && a > b){
-                var c = month-1;
-                var d = month;
-            }
-            else if(date > 10 && a > b){
                 var c = month;
                 var d = month+1;
             }
+            else if(date > 10 && a > b){
+                var c = month+1;
+                var d = month+2;
+            }
             else{
-                var c = month;
+                var c = month+1;
                 var d = "none";
             }
 
