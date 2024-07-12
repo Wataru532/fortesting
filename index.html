@@ -21,7 +21,6 @@
             var dates = [31,28,31,30,31,30,31,31,30,31,30,31];
         }
       function showd_Mon(){
-            document.getElementById("d_Mon").className = "not_today";
             if (date-day+1 > dates[month]){
                 a = date-day+1 - dates[month];
             } else if (date-day+1 <= 0){
@@ -32,7 +31,27 @@
             
             return a;
         }
-      console.log(showd_Mon());
+      function month_Now(){
+            if(date < 10 && a > b){
+                var c = months[month-1];
+                var d = months[month];
+            }
+            else if(date > 10 && a > b){
+                var c = months[month];
+                var d = months[month+1];
+            }
+            else{
+                var c = months[month];
+                var d = "none";
+            }
+
+            if (d == "none"){
+                return c;
+            }else{
+                return c + " / " + d;
+            }
+        }
+      console.log(showd_Mon(),month_now());
     </script>
   </body>
 </html>
