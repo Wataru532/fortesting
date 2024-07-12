@@ -31,17 +31,28 @@
             
             return a;
         }
+      function showd_Fri(){
+            if (date-day+5 > dates[month]){
+                b = date-day+5-dates[month];
+            } else if (date-day+5 <= 0){
+                b =  dates[month-1] + date-day+5;
+            }else{
+                b =  date - day + 5;
+            }
+            return b;
+        }
+      
       function month_Now(){
             if(date < 10 && a > b){
-                var c = months[month-1];
-                var d = months[month];
+                var c = month-1;
+                var d = month;
             }
             else if(date > 10 && a > b){
-                var c = months[month];
-                var d = months[month+1];
+                var c = month;
+                var d = month+1;
             }
             else{
-                var c = months[month];
+                var c = month;
                 var d = "none";
             }
 
@@ -51,7 +62,9 @@
                 return c + " / " + d;
             }
         }
-      console.log(showd_Mon(),month_Now());
+      showd_Mon();
+      showd_Fri();
+      console.log(month_Now());
     </script>
   </body>
 </html>
