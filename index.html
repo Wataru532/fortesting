@@ -15,6 +15,11 @@
       const weeks = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
       var a = 0;
       var b = 0;
+      if (year%4==0 && !(year%100==0 && year%400!=0)) {
+            var dates = [31,29,31,30,31,30,31,31,30,31,30,31];
+        } else{
+            var dates = [31,28,31,30,31,30,31,31,30,31,30,31];
+        }
       function showd_Mon(){
             document.getElementById("d_Mon").className = "not_today";
             if (date-day+1 > dates[month]){
