@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+  </head>
+  <body>
+    <p id="d_Mon">Test</p>
+    <script>
+      function showd_Mon(){
+            document.getElementById("d_Mon").className = "not_today";
+            if (date-day+1 > dates[month]){
+                a = date-day+1 - dates[month];
+            } else if (date-day+1 <= 0){
+                a = dates[month-1] + date-day+1;
+            }else{
+                a = date - day + 1;
+            }
+            
+            return a;
+        }
+      console.log(showd_Mon());
+    </script>
+  </body>
+</html>
