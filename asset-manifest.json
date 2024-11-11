@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fortesting/static/css/main.00aece06.css",
+    "main.js": "/fortesting/static/js/main.41a351b6.js",
+    "static/js/453.96327e19.chunk.js": "/fortesting/static/js/453.96327e19.chunk.js",
+    "index.html": "/fortesting/index.html",
+    "main.00aece06.css.map": "/fortesting/static/css/main.00aece06.css.map",
+    "main.41a351b6.js.map": "/fortesting/static/js/main.41a351b6.js.map",
+    "453.96327e19.chunk.js.map": "/fortesting/static/js/453.96327e19.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00aece06.css",
+    "static/js/main.41a351b6.js"
+  ]
+}
